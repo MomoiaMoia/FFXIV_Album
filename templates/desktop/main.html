@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="HandheldFriendly" content="true">
+    <title>Memory - 记忆</title>
+    <!-- <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}"> -->
+    <link rel="stylesheet" href="/static/css/bs/bootstrap.min.css">
+    <link rel="stylesheet" href="/static/css/desktop/main.css">
+    <link rel="stylesheet" href="/static/css/animate.min.css"/>
+    <script src="/static/js/jquery.min.js"></script>
+    <script src="/static/js/bootstrap.min.js"></script>
+    <script src="/static/js/bootstrap.bundle.min.js"></script>
+    <script src="/static/js/jquery.scrollify.js"></script>
+</head>
+
+<body>
+    <div class="panel">
+        <img class="bg" src="/static/image/bg.png">
+        <div class="up-content animate__animated animate__fadeInUp animate__delay-0.5s">
+            <div class="border-left">
+                <p class="header-en">MEMORY<span class="header-cn">回忆狭间</span></p>
+            </div>
+            <div class="border-left2">
+                <p class="header-content">两位四字饮品肥肥相遇在艾欧泽亚的回忆。<br>
+                    两位四字饮品肥肥相知在艾欧泽亚的回忆。<br>
+                    两位四字饮品肥肥生活在艾欧泽亚的回忆。<br>
+                    两位四字饮品肥肥无论身在何处，都会好好努力下去的见证。</p>
+            </div>
+            <button type="button" class="btn btn-light" style="font-size: 1vw;height: 4.6vh;"><a href="#start">Start</a></button>
+            <button type="button" class="btn btn-light" data-toggle="modal" data-target="#staticBackdrop" style="font-size: 1vw;height: 4.6vh;">关闭狭间</a></button>
+        </div>
+    </div>
+    <div class="panel">
+        <p class="header2-en">SELECT MEMORY <span class="header2-cn"><a name="start">选择回忆</span></p>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <img class="item" onclick="window.open('/ourmeet');" src="/static/image/main_1.png">
+                </div>
+                <div class="col">
+                    <img class="item" onclick="window.open('/ournewyear');" src="/static/image/main_2.png">
+                </div>
+                <div class="col">
+                    <img class="item" onclick="window.open('/our****');" src="/static/image/main_3.png">
+                </div>
+                <div class="col">
+                    <img class="item" onclick="window.open('/journey-of-the-white-knight');" src="/static/image/main_5.png">
+                </div>
+                <div class="col">
+                    <img class="item" onclick="window.open('/ourmemory');" src="/static/image/main_4.png">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="staticBackdropLabel"><b>关闭狭间</b></h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              当回忆成为累赘的时候，请不要再去回顾。<br>
+              当回忆成为停滞的理由，请放手让它离去。<br>
+              当回忆无法为你带来微笑 ———— <br>
+              <br>
+              点击下方<span style="color:#dc3545;">确认关闭</span>按钮后，就没法再次进入这里了。<br>
+              此操作不可逆且无进一步确认，请在需要时使用。
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-danger"><a href="/delall" style="color: #fff;">确认关闭</a></button>
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">取消关闭</button>
+            </div>
+          </div>
+        </div>
+      </div>
+</body>
+
+<script>
+    $(function() {
+        $('.panel').css({'height': $(window).height()});
+        $.scrollify({
+            section: '.panel'
+        });
+    });
+</script>    
+<script>
+    window.addEventListener("keydown", function(e) {
+        //可以判断是不是mac，如果是mac,ctrl变为花键
+        //event.preventDefault() 方法阻止元素发生默认的行为。
+        if (e.keyCode == 83 && (navigator.platform.match("Mac") ? e.metaKey : e.ctrlKey)) {
+            e.preventDefault();
+            // Process event...
+            document.getElementById("test").innerHTML = "ctrl+s成功";
+        }
+    }, false);
+</script>
+</html>

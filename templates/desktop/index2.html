@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="HandheldFriendly" content="true">
+    <title>Memory - 记忆</title>
+    <!-- <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}"> -->
+    <link rel="stylesheet" href="/static/css/normalize.css">
+    <link rel="stylesheet" href="/static/css/bs/bootstrap.min.css">
+    <link rel="stylesheet" href="/static/css/desktop/root.css">
+    <script src="/static/js/jquery.min.js"></script>
+    <script src="/static/js/bootstrap.min.js"></script>
+    <script src="/static/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+    <div class="memory">
+        <p>狭间已关闭。</p>
+    </div>
+</body>
+
+<script>
+    $("#btn1").click(function(){
+        $.post("/api",{pwd:$("#confirm").val()},function(){$(location).attr('href', '/index')});
+      });
+</script>
+<script>
+    window.addEventListener("keydown", function(e) {
+        //可以判断是不是mac，如果是mac,ctrl变为花键
+        //event.preventDefault() 方法阻止元素发生默认的行为。
+        if (e.keyCode == 83 && (navigator.platform.match("Mac") ? e.metaKey : e.ctrlKey)) {
+            e.preventDefault();
+            // Process event...
+            document.getElementById("test").innerHTML = "ctrl+s成功";
+        }
+    }, false);
+</script>
+</html>

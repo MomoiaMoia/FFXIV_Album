@@ -1,0 +1,142 @@
+body{
+    background-color:transparent;
+    background-image: url(/static/image/bg2.png);
+}
+
+@font-face {
+    font-family: "En Font";
+    src: url(/static/font/BASKVILL.TTF);
+}
+
+@font-face {
+    font-family: "Cn Font";
+    src: url(/static/font/ShangShouJianYuanTi-2.ttf);
+}
+
+.container {
+    max-width: 60vw;
+}
+
+.btn-light {
+    font-size: 1.1vw;
+    color: #212529;
+    background-color: #f8f9fa;
+    border-color: #f8f9fa;
+    width: 5.5vw;
+}
+
+a {
+    color: black;
+}
+
+a:hover {
+    color: black;
+}
+
+.border-left {
+    border-left: 0px!important;
+}
+    .border-left:before {
+        /* content: ''; */
+        position: absolute;
+        left: 16%;
+        bottom: 3vh;
+        right: auto;
+        height: 1px;
+        width: 61%;
+        background-color: #000000;
+    }
+
+.border-left2 {
+    border-left: 0px!important;
+}
+    .border-left2:before {
+        /* content: ''; */
+        position: absolute;
+        left: -1.5vw;
+        top: 8.2vw;
+        bottom: auto;
+        right: auto;
+        height: 8.6vw;
+        width: 0.5vw;
+        /* background-color: #fff; */
+    }
+
+.up-content {
+    position: absolute;
+    color: #fff;
+    margin: 11.5% 11.5%;
+}
+
+.header-en {
+    font-family: "En font";
+    font-size: 4.5vw;
+
+}
+
+.header-cn {
+    font-family: "Cn font";
+    font-size: 2vw;
+}
+
+.header2-en {
+    position: absolute;
+    margin: 4vw 35vw;
+    color: #fff;
+    font-family: "En font";
+    font-size: 2.5vw;
+    border-style: solid;
+    border-width: 0vw 0px 0.3vw 0px;
+
+}
+
+.header2-cn {
+    color: #fff;
+    font-family: "Cn font";
+    font-size: 1.5vw;
+}
+
+.header-content {
+    font-family: "Cn font";
+    font-size: 1.45vw;
+    line-height: 2.5vw;
+    letter-spacing: 0.15vw;
+}
+
+.container {
+    position: absolute;
+    margin: 13vw 0px 0px;
+    color: #fff;
+}
+
+.row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -34vw;
+    margin-left: 6vw;
+}
+
+.item {
+    width: 15vw;
+}
+
+.item:hover {
+    display: inline-block;
+  
+    animation: pulse; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 1.5s; /* don't forget to set a duration! */
+}
+
+.bg {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    z-index: -1;
+}
+
+.content {
+    width: 100%;
+    height: 100%;
+}

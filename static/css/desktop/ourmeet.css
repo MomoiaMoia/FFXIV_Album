@@ -1,0 +1,124 @@
+body{
+    background-color:transparent;
+    background-image: url(/static/image/bg2.png);
+}
+
+@font-face {
+    font-family: "En Font";
+    src: url(/static/font/BASKVILL.TTF);
+}
+
+@font-face {
+    font-family: "Cn Font";
+    src: url(/static/font/ShangShouJianYuanTi-2.ttf);
+}
+
+@font-face {
+    font-family: "Title Font_Cn";
+    src: url(/static/font/ZhuLangXinSong-XiTi-2.otf);
+}
+
+.content {
+    margin: 4vw 2.5vw 0px;
+    position: absolute;
+}
+
+.title-h1 {
+    font-family: "Title Font_Cn";
+    font-size: 1.5vw;
+    font-weight: bold;
+    margin-bottom: 0px;
+}
+
+.title-slogn {
+    width: 10vw;
+    font-family: "Title Font_Cn";
+    font-size: 0.8vw;
+    text-align: right;
+    color: #7d7d7d;
+    margin-top: -0.2vw;
+    letter-spacing: -0.06vw;
+}
+
+.descript {
+    font-family: "En Font";
+    margin-top: 8vh;
+    font-size: 0.8vw;
+    color: #777777;
+}
+
+.text {
+    font-family: "En Font";
+    margin-top: -0.6vw;
+    font-size: 0.85vw;
+    letter-spacing: -0.04vw;
+}
+
+.talk {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 3vw 0px 25vh;
+    font-size: 0.8vw;
+}
+
+.bg {
+    background-color: #f6f6f6;
+    width: 18vw;
+    height: 100vh;
+}
+
+#btn-left {
+    position: absolute;
+    margin: 7vh 15.5vw;
+    z-index: -1;
+}
+
+.right {
+    margin-top: -5.3vw;
+    position: absolute;
+    z-index: -2;
+}
+
+.left {
+    position: absolute;
+    box-shadow: 0.1vw 0px 0.5vw #000000a1;
+    left: 0vw;
+}
+
+.carousel-control-prev {
+    left: 18vw;
+}
+
+.carousel-indicators {
+    left: 18vw;
+}
+
+.copyright {
+    bottom: 28vh;
+    font-size: 0.44vw;
+    word-spacing: 0.1vw;
+}
+
+.sig {
+    bottom: 28vh;
+    font-size: 0.44vw;
+    margin-bottom: 5px;
+}
+
+.w-100 {
+    height: 110.4vh!important;
+    width: auto!important;
+}
+
+.border-top {
+    border-top: 0px!important;
+}
+    .border-top:before {
+        content: '';
+        position: absolute;
+        left: 0%;
+        bottom: 3vh;
+        right: auto;
+        height: 1.5px;
+        width: 65%;
+        background-color: #00000073;
+    }
